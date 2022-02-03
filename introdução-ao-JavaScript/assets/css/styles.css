@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(177, 225, 255);
+}
+
+button {
+    height: 40px;
+    width: 100%;
+    border-radius: 50%;
+    font-size: 16pt;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid rgb(105, 197, 255);
+    border-radius: 5px;
+    background-color: rgb(227, 248, 255);
+    color: rgb(105, 197, 255);
+    padding: 5px;
+}
+
+#counter {
+    display: flex;
+}
+
+#currentNumber {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 16pt;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  
+#tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+:checked + label {
+    text-decoration: line-through;
+    color: grey;
+  }
