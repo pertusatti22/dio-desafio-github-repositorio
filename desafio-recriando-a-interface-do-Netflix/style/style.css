@@ -1,0 +1,99 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+    --link: #AAA;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--preto);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 10px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size:50px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--link);
+    margin-right: 10px;
+}
+header nav a:hover{
+    color:#fff;
+}
+
+/* Filme principal */
+
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/desafio-recriando-a-interface-do-Netflix/img/capa-boba-fett.jpg');
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo{
+    font-size: 40px;
+    margin-top: 15%;
+}
+
+.botao{
+    background-color: rgba(0,0,0, .50);
+    border: none;
+    color:white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.filme-principal .container{
+    width: 70%;
+    margin-left: 25px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 3px;
+}
