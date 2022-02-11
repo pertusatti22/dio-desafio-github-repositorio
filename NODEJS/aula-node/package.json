@@ -1,0 +1,17 @@
+{
+  "name": "ms-autentication",
+  "version": "1.0.0",
+  "description": "Microservice criao durante bootcamp Inter dio",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./",
+    "build": "tsc -p ."
+  },
+  "author": "Jackson Pertusatti sob orientação do professor Renan J Paula",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.17",
+    "typescript": "^4.5.5"
+  }
+}
