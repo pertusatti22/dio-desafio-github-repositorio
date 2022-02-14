@@ -5,6 +5,7 @@ import statusRoute from './routes/status.route';
 import usersRoute from './routes/users.route';
 
 const app = express();
+const port = 7000;
 
 // Configurações da aplicação
 app.use(express.json());
@@ -19,7 +20,7 @@ app.use(authorizationRoute);
 app.use(errorHandler);
 
 // Inicialização do servidor
-app.listen(3000, () => {
-    console.log('Aplicação online na porta 3000!');
+app.listen(port, () => {
+    console.log(`Aplicação online na porta ${port}!`);
 });
 
